@@ -1,0 +1,237 @@
+*,
+**,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 1em;
+  list-style: none;
+  text-decoration: none;
+  padding: 0 8px 0 8px;
+}
+nav a.active,
+nav a:hover {
+  background: black;
+  color: white;
+  transition: 0.5s;
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: 3px 2px rgb(85, 85, 85);
+}
+
+html,
+body,
+.hero {
+  height: 100%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 600px;
+  background: url(./images/black-smoke.png);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  width: 100%;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 span {
+  letter-spacing: 3;
+  color: white;
+}
+
+/* Projects grid */
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.projects-section {
+  margin: 0 auto;
+  max-width: 2500px;
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-bottom: 200px solid black;
+  margin-bottom: 0;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  box-sizing: border-box;
+  width: 100%;
+  grid-gap: 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 4px;
+  margin: 10px 40px;
+}
+
+.portfolio-item-wrapper img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.img-darken {
+  transition: 0.5s;
+  filter: brightness(60%);
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .projects-section {
+    border-bottom: 1000px solid black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projects-section {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 900px solid black;
+  }
+  .portfolio-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: url(./images/black-smoke-180.png);
+  background-size: cover;
+}
+
+.contact-text {
+  color: white;
+  padding-top: 200px;
+  font-size: 3rem;
+}
+
+.large-text {
+  font-size: 7rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+}
+.social-links a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+  margin-top: 130px;
+  padding: 20px 15px 0px 15px;
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  transform: scale(1.3);
+  transition: ease-in-out 0.7s;
+  -moz-transform: scale(1.3);
+  -moz-transition: ease-in-out 0.7s;
+  -webkit-transform: scale(1.3);
+  -webkit-transition: ease-in-out 0.7s;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-text {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .large-text {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 1.7rem;
+  }
+  .social-links a {
+    font-size: 1rem;
+  }
+  .projects-section {
+    border-bottom: 250px solid black;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .social-links a {
+    font-size: 0.8rem;
+  }
+  .projects-section {
+    border-bottom: 270px solid black;
+  }
+}
