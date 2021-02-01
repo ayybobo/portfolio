@@ -318,6 +318,22 @@ h2 {
   text-shadow: 2px 2px 4px black;
 }
 
+.contact-details:hover #insta {
+  color: rgb(224, 72, 98);
+}
+
+.contact-details:hover #linked-in {
+  color: rgb(34, 19, 255);
+}
+
+.contact-details:hover #github {
+  color: rgb(43, 14, 112);
+}
+
+.contact-details:hover #email {
+  color: rgb(165, 22, 22);
+}
+
 /* Media Queries */
 
 @media (min-width: 400px) {
