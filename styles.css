@@ -47,7 +47,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "Sedgwick Ave Display", "Poppins", cursive;
 }
 
 /* Navbar */
@@ -92,6 +92,7 @@ body {
 .link-text {
   display: none;
   margin-left: 1rem;
+  font-family: "Poppins", cursive;
 }
 
 .nav-link svg {
@@ -293,6 +294,7 @@ h2 {
   flex-direction: row;
   text-shadow: 2px 2px 4px white;
 }
+
 .social-links a {
   color: black;
   list-style: none;
@@ -301,6 +303,8 @@ h2 {
   margin-top: 130px;
   padding: 5px;
   font-size: 0.7rem;
+  font-family: "Poppins", cursive;
+  font-weight: 700;
 }
 
 .social-links a:hover {
@@ -353,15 +357,20 @@ h2 {
   main {
     margin: 0;
   }
+  .link-text {
+    margin-left: 0;
+  }
   .nav-link span {
     justify-content: center;
     text-align: center;
   }
   .navbar svg {
     width: 1.5rem;
+    margin-left: -10px;
   }
   .navbar:hover svg {
-    width: 2rem;
+    width: 1rem;
+    margin-right: 8px;
   }
   .navbar:hover {
     width: 100%;
