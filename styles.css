@@ -47,7 +47,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: "Sedgwick Ave Display", "Poppins", cursive;
+  font-family: "Poppins", cursive;
 }
 
 /* Navbar */
@@ -146,40 +146,38 @@ body,
   height: 100vh;
   background: url(./images/black-smoke.png);
   background-size: cover;
+  font-family: "Sedgwick Ave Display";
 }
 
 /* text animations on hero */
 .hero h1 {
-  animation: fadeIn ease 750ms;
+  animation: fadeIn ease 5s;
 }
 
 .hero h3 {
-  animation: fadeIn2 ease 750ms;
+  animation: fadeIn2 ease 5s;
 }
 
 @keyframes fadeIn {
   0% {
-    transform: scale(0);
+    color: white;
     opacity: 0;
-    transform: translateX(-100px);
   }
   100% {
-    transform: scale(1);
     opacity: 1;
-    transform: translateX(0px);
+    color: white;
   }
 }
 
 @keyframes fadeIn2 {
   0% {
     opacity: 0;
-    transform: translateX(100px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
   }
 }
+
 
 h1 {
   font-size: 1.5em;
@@ -196,7 +194,7 @@ h3 {
   font-size: 1.5em;
   text-align: center;
   font-weight: 700;
-  color: white;
+  color: black;
   width: 100%;
   position: relative;
   top: 40%;
@@ -211,6 +209,24 @@ h1 span {
 h1 > span.fade {
   color: black;
 }
+
+h3 span {
+  transition: all 1s ease;
+  color: black;
+}
+
+h3 > span.fade {
+  color: white;
+}
+/*
+.large-text span {
+  transition: all 1s ease;
+  color: black;
+}
+
+.large-text > span.fade {
+  color: white;
+} */
 
 /* Projects section */
 
@@ -279,6 +295,7 @@ h2 {
 }
 
 .contact-text {
+  font-family: "Sedgwick Ave Display", "Poppins", cursive;
   color: white;
   padding-top: 75px;
   font-size: 2rem;
@@ -319,7 +336,7 @@ h2 {
 }
 
 .contact-details:hover #insta {
-  color: rgb(224, 72, 98);
+  color: rgb(250, 0, 96);
 }
 
 .contact-details:hover #linked-in {
